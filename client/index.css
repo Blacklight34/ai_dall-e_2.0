@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&family=Open+Sans:wght@400;600;700&family=Overpass:wght@400;700&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass";
+}
+
+.main_component {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_button>input {
+    height: 50px;
+    width: 50vw;
+    font-size: 19px;
+    padding-left: 50px;
+}
+
+.input_button>button {
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.input_button>button:hover {
+    cursor: pointer;
+}
+
+.input_button>p {
+    padding-left: 250px;
+    font-size: 25px;
+}
+
+.result-image {
+    margin-top: 30px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid grey */
+
+}
+
+.result-image>img {
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid grey
+}
+
+
+/* Loader */
+.loader-container{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.167);
+}
+.loader {
+    /* border: 5px solid #f3f3f3; */
+    /* Light grey */
+    border-top: 5px solid #3498db;
+    position: absolute;
+    top: 40%;
+    /* Blue */
+    left: 45%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
