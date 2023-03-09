@@ -11,7 +11,7 @@ const SearchComp = () => {
     if (searchText) {
       try {
         setGeneratingImg(true);
-        const response = await fetch("https://dalle2-0-5xbh.onrender.com", {
+        const response = await fetch("https://dalle2-0-5xbh.onrender.com/api/v1/dalle", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
